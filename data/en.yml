@@ -1,0 +1,193 @@
+metadata:
+  title: 'СV: Alexander Larin'
+  description: ''
+name: Alexander Larin
+tagline: Tech Lead, CTO
+contacts:
+  email: ekzebox@gmail.com
+  phone: '+79156997437'
+  telegram: alexanderlarin
+links:
+  linkedin: alexander-o-larin
+  github: alexanderlarin
+  researchgate: aleksandr-larin
+
+languages:
+  title: Languages
+  items:
+    - idiom: Russian
+      level: Native
+    - idiom: English
+      level: Professional
+
+interests:
+  title: Interests
+  items:
+    - item: Climbing
+      url:
+    - item: Snowboarding
+      url:
+    - item: Cooking
+      url:
+
+#skills:
+#  title: Навыки
+#  sections:
+#    - title: Backend
+#      items:
+#        - name: Python & Django
+#          level: 98%
+#        - name: Javascript & jQuery
+#          level: 50%
+#        - name: Angular
+#          level: 98%
+#    - title: Frontend
+#      items:
+#        - name: HTML5 & CSS
+#          level: 60%
+#        - name: Ruby on Rails
+#          level: 85%
+#    - title: Others
+#      tags:
+#        - CI/CD
+#        - DevOps
+#        - Code Review
+#        - Git
+
+summary:
+  title: Summary
+  description: |
+    Seasoned Technical Leader and Solutions Architect with 10+ years in software development 
+    and 5 years managing complex IT projects. 
+    Specializes in building high-performance cross-platform solutions (Desktop, Mobile, Web, IoT) 
+    with focus on scalability and optimization. 
+    Combines deep technical expertise (ML, Computer Vision) with leadership skills 
+    (Agile, SCRUM, team building).
+
+    Delivered 10+ successful projects with measurable impact:
+    - 2-5x system performance improvements
+    - 50% reduction in time-to-market
+    - CI/CD pipeline implementation
+    Focuses on balancing innovation with business-driven execution while fostering team growth 
+    and establishing efficient development processes.
+
+education:
+  title: Education
+  items:
+    - degree: Postgraduate
+      theme: Computer Science
+      university: Moscow Institute of Physics and Technology (MIPT), Moscow
+      time: 2012 - 2016
+    - degree: Master of Science
+      theme: Computer Science
+      university: Tula State University (TSU), Tula
+      time: 2010 - 2012
+    - degree: Bachelor of Science
+      theme: Computer Science
+      university: Tula State University (TSU), Tula
+      time: 2006 - 2010
+
+experiences:
+  title: Work Experience
+  achievements_title: Achievements
+  tags_title: Technologies
+  info:
+    - role: Director of Software Development
+      time: February 2020 - February 2022
+      company: Markov Processes International, Summit, NJ
+      tags: ['Python', 'C++', 'Pure C', 'Delphi', 'React', 'GatsbyJS', 'Machine Learning', 'Node.js', 'CI/CD', 'GitLab']
+      detail: |
+        Established transparent workflows between engineering teams and C-level executives (Acting CTO).
+        Oversaw full software development lifecycle (SDLC), optimized resource allocation 
+        for development and testing, led legacy system modernization initiative.
+      achievements: |
+        - Implemented GitLab-based CI/CD pipeline, reducing release cycles by 40%
+        - Unified tech stack and modernized documentation system for core products
+        - Automated QA processes, cutting regression testing time by 50%
+        - Led performance optimization project for flagship product (3x speed improvement)
+        - Redesigned and relaunched legacy product with modern UI/UX (25% user retention boost)
+        - Prepared data warehouse (DWH) migration to cloud services (35% cost reduction)
+        - Launched MVP for financial portfolio analytics product (adopted by 5+ enterprise clients)
+
+    - role: Lead Developer, Consultant
+      time: November 2021 - May 2022
+      company: Chili Solusi, Jakarta, Indonesia
+      tags: ['Python', 'FastAPI', 'PyTorch', 'TensorFlow', 'PostgreSQL']
+      detail: |
+        Developed and deployed ML-powered Anti-Fraud system and document verification OCR solution.
+        Integrated into microservices architecture with real-time performance optimization.
+      achievements: |
+        - Implemented high-accuracy (>96%) Anti-Fraud system enabling market entry in Indonesian microfinance sector
+        - Built on-premise OCR system eliminating third-party API costs (50% reduction per request)
+        - Maintained 99% uptime under 500 RPS load
+
+    - role: Lead Researcher, Consultant
+      time: January 2019 - September 2019
+      company: Huawei, R&D, Moscow
+      tags: ['C++', 'Python', 'OpenCV', 'TensorFlow', 'PyTorch', 'Pandas', 'SciPy']
+      detail: |
+        Led research project improving RGBD sensor data quality using computer vision methods.
+        Developed and optimized depth map super-resolution algorithms, including state-of-the-art analysis.
+        Integrated solutions into production image processing pipeline and provided technical guidance.
+      achievements: |
+        - Implemented depth data enhancement algorithms
+        - Optimized processing speed (2x improvement)
+        - Prepared 2 patent applications for novel processing methods
+
+    - role: Lead FullStack Developer, Architect
+      time: August 2015 - February 2018
+      company: Developer Express, Tula
+      tags: ['Node.js', 'React', 'React Native', 'Microservices', 'Event Sourcing', 'MongoDB']
+      detail: |
+        Designed product concept, roadmap and go-to-market strategy for gamification platform (B2C/B2B).
+        Architected and developed complete solution (backend, web, iOS/Android), led team of 3 developers and designer.
+      achievements: |
+        - Created open-source microservices and event-sourcing frameworks for high-load web services
+        - Launched product with server, Web/iOS/Android clients and social media plugins (VK, FB)
+        - Project reached 10K MAU before discontinuation
+        - Core concepts adopted by major Russian IT companies for internal portals
+
+    - role: Assistant Professor (Lecturer)
+      time: September 2015 - July 2016
+      company: Tula State University, Tula
+      detail: |
+        Developed and taught "Programming Languages" course (Pascal/C/Python) using project-based learning.
+        Mentored students in cross-platform text RPG development, modern practices:
+        Git, CI/CD, unit testing, code reviews.
+      achievements: |
+        100% course completion rate with all students mastering Agile fundamentals
+      tags: ['C', 'Pascal', 'Python', 'Git']
+
+    - role: Lead Research Developer
+      time: March 2013 - November 2015
+      company: GlobeDrobe, Moscow
+      tags: ['C++', 'Python', 'PCL', 'OpenCV', 'CGAL', 'Kinect SDK', 'SLAM']
+      detail: |
+        Developed 3D body scanning system for virtual fitting room using Kinect.
+        Researched and implemented computer vision algorithms and surface reconstruction.
+        Contributed to open-source 3D processing libraries.
+      achievements: |
+        - Built real-time virtual fitting room prototype
+        - Created unique 3D scanning system: 2-minute scan/processing time, 50K+ polygon models with textures, <5mm margin of error
+
+    - role: Senior Developer
+      time: August 2012 - February 2013
+      company: Refactor IKS, Moscow
+      tags: ['ASP.NET', 'MVC', 'C#', 'SQL']
+      detail: |
+        Developed, implemented and maintained enterprise .NET MVC systems.
+
+    - role: Middle Developer
+      time: August 2009 - August 2012
+      company: Developer Express, Tula
+      tags: ['C#', 'ASP.NET', 'WinForms', 'Silverlight', 'WinRT', 'WPF', 'Unit Testing', 'QA', 'TDD']
+      detail: |
+        Developed and refactored data visualization components (DXperience product line).
+        Planned releases, mentored junior developers and provided product support.
+
+    - role: Junior Developer
+      time: September 2008 - July 2009
+      company: Smartech, Tula
+      tags: ['C', 'C++', 'Qt']
+      detail: |
+        Developed cross-platform applications using Qt framework.

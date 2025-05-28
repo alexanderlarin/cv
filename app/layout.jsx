@@ -1,7 +1,10 @@
-export const metadata = {
-    title: 'Next.js on GitHub Pages',
-    description: 'Deploy your static Next.js site to GitHub Pages.',
-};
+import './global.scss';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import '@fortawesome/fontawesome-svg-core/styles.css'
+
+library.add(fas, fab);
 
 import { Roboto } from 'next/font/google';
 
