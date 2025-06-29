@@ -57,19 +57,13 @@ interests:
 summary:
   title: Summary
   description: |
-    Seasoned Technical Leader and Solutions Architect with 10+ years in software development 
-    and 5 years managing complex IT projects. 
-    Specializes in building high-performance cross-platform solutions (Desktop, Mobile, Web, IoT) 
-    with focus on scalability and optimization. 
-    Combines deep technical expertise (ML, Computer Vision) with leadership skills 
-    (Agile, SCRUM, team building).
-
-    Delivered 10+ successful projects with measurable impact:
-    - 2-5x system performance improvements
-    - 50% reduction in time-to-market
-    - CI/CD pipeline implementation
-    Focuses on balancing innovation with business-driven execution while fostering team growth 
-    and establishing efficient development processes.
+    Experienced Technical Lead and Solutions Architect with 10+ years in software development and 5 years managing complex IT projects.
+    Specializes in building high-performance cross-platform solutions (Desktop, Mobile, Web, IoT) with a focus on scalability and efficiency.
+    Combines deep technical expertise (ML, Computer Vision) with leadership skills (Agile, SCRUM, building teams).
+  
+    Delivered 10+ successful projects with measurable outcomes:  2–5x performance gains, 50% time-to-market reduction, CI/CD implementation.
+  
+    Balances innovation with practical business needs, emphasizing team growth and efficient development processes.
 
 education:
   title: Education
@@ -95,38 +89,39 @@ experiences:
     - role: Director of Software Development
       time: February 2020 - February 2022
       company: Markov Processes International, Summit, NJ
-      tags: ['Python', 'C++', 'Pure C', 'Delphi', 'React', 'GatsbyJS', 'Machine Learning', 'Node.js', 'CI/CD', 'GitLab']
+      tags: ['Python', 'C++', 'Pure C', 'Delphi', 'React', 'GatsbyJS', 'ML', 'Node.js', 'CI/CD', 'GitLab']
       detail: |
-        Established transparent workflows between engineering teams and C-level executives (Acting CTO).
-        Oversaw full software development lifecycle (SDLC), optimized resource allocation 
-        for development and testing, led legacy system modernization initiative.
+        Established transparent processes for team-executive collaboration,
+        led end-to-end software development (acting as de-facto CTO),
+        optimized and secured additional resources for R&D and testing,
+        orchestrated legacy system modernization initiatives.
       achievements: |
-        - Implemented GitLab-based CI/CD pipeline, reducing release cycles by 40%
+        - Implemented modern development practices and full-cycle CI/CD
         - Unified tech stack and modernized documentation system for core products
-        - Automated QA processes, cutting regression testing time by 50%
-        - Led performance optimization project for flagship product (3x speed improvement)
-        - Redesigned and relaunched legacy product with modern UI/UX (25% user retention boost)
-        - Prepared data warehouse (DWH) migration to cloud services (35% cost reduction)
-        - Launched MVP for financial portfolio analytics product (adopted by 5+ enterprise clients)
+        - Automated QA processes to accelerate release cycles
+        - Led performance optimization project for flagship product
+        - Launched full UI/UX redesign to modern standards for legacy products
+        - Prepared company’s DWH solution for cloud migration
+        - Delivered MVP for financial portfolio analytics product
 
     - role: Lead Developer, Consultant
       time: November 2021 - May 2022
       company: Chili Solusi, Jakarta, Indonesia
-      tags: ['Python', 'FastAPI', 'PyTorch', 'TensorFlow', 'PostgreSQL']
+      tags: ['Python', 'FastAPI', 'PyTorch', 'TensorFlow', 'Postgres']
       detail: |
         Developed and deployed ML-powered Anti-Fraud system and document verification OCR solution.
-        Integrated into microservices architecture with real-time performance optimization.
+        Integrated solutions into product's microservice architecture with real-time performance optimization.
       achievements: |
-        - Implemented high-accuracy (>96%) Anti-Fraud system enabling market entry in Indonesian microfinance sector
-        - Built on-premise OCR system eliminating third-party API costs (50% reduction per request)
-        - Maintained 99% uptime under 500 RPS load
+        - Built high-accuracy Anti-Fraud system (>96% detection rate) that enabled market entry in Indonesia's microfinance sector with unique offering
+        - Created on-premise OCR system, eliminating dependency on paid third-party ML services and reducing per-request cost by 50%
+        - Ensured system stability under heavy load (~99% uptime at 500 RPS)
 
     - role: Lead Researcher, Consultant
       time: January 2019 - September 2019
       company: Huawei, R&D, Moscow
       tags: ['C++', 'Python', 'OpenCV', 'TensorFlow', 'PyTorch', 'Pandas', 'SciPy']
       detail: |
-        Led research project improving RGBD sensor data quality using computer vision methods.
+        Led research project improving RGBD sensor data quality using Computer Vision methods.
         Developed and optimized depth map super-resolution algorithms, including state-of-the-art analysis.
         Integrated solutions into production image processing pipeline and provided technical guidance.
       achievements: |
@@ -142,18 +137,17 @@ experiences:
         Designed product concept, roadmap and go-to-market strategy for gamification platform (B2C/B2B).
         Architected and developed complete solution (backend, web, iOS/Android), led team of 3 developers and designer.
       achievements: |
-        - Created open-source microservices and event-sourcing frameworks for high-load web services
+        - Released open-source microservices and event-sourcing frameworks for high-load web services
         - Launched product with server, Web/iOS/Android clients and social media plugins (VK, FB)
         - Project reached 10K MAU before discontinuation
-        - Core concepts adopted by major Russian IT companies for internal portals
+        - Core concepts of the project adopted and currently used by major Russian IT companies for their products
 
     - role: Assistant Professor (Lecturer)
       time: September 2015 - July 2016
       company: Tula State University, Tula
       detail: |
         Developed and taught "Programming Languages" course (Pascal/C/Python) using project-based learning.
-        Mentored students in cross-platform text RPG development, modern practices:
-        Git, CI/CD, unit testing, code reviews.
+        Mentored students in cross-platform text RPG development, modern practices: Git, CI/CD, unit testing, code reviews.
       achievements: |
         100% course completion rate with all students mastering Agile fundamentals
       tags: ['C', 'Pascal', 'Python', 'Git']
@@ -163,8 +157,8 @@ experiences:
       company: GlobeDrobe, Moscow
       tags: ['C++', 'Python', 'PCL', 'OpenCV', 'CGAL', 'Kinect SDK', 'SLAM']
       detail: |
-        Developed 3D body scanning system for virtual fitting room using Kinect.
-        Researched and implemented computer vision algorithms and surface reconstruction.
+        Developed 3D human body scanning system for virtual fitting room using Kinect.
+        Researched and implemented computer vision algorithms and surface reconstruction system.
         Contributed to open-source 3D processing libraries.
       achievements: |
         - Built real-time virtual fitting room prototype
