@@ -1,5 +1,5 @@
 metadata:
-  title: 'СV: Alexander Larin'
+  title: 'CV: Alexander Larin'
   description: ''
 name: Alexander Larin
 tagline: Tech Lead, CTO
@@ -18,7 +18,7 @@ languages:
     - idiom: Russian
       level: Native
     - idiom: English
-      level: Professional
+      level: Professional, B2
 
 interests:
   title: Interests
@@ -57,18 +57,19 @@ interests:
 summary:
   title: Summary
   description: |
-    Experienced Technical Lead and Solutions Architect with 10+ years in software development and 5 years managing complex IT projects.
-    Specializes in building high-performance cross-platform solutions (Desktop, Mobile, Web, IoT) with a focus on scalability and efficiency.
-    Combines deep technical expertise (ML, Computer Vision) with leadership skills (Agile, SCRUM, building teams).
-  
-    Delivered 10+ successful projects with measurable outcomes:  2–5x performance gains, 50% time-to-market reduction, CI/CD implementation.
+    Technical lead and solutions architect with 10+ years in software development and 5 years managing complex IT projects.
+    Works across the full development cycle — from research and architecture through release and support — on Desktop, Mobile, Web and IoT.
+    Domains range from computer vision and ML to high-load services.
+    Combines a technical and research background with hands-on leadership (Agile, SCRUM, team building).
+
+    Delivered 10+ successful projects with measurable outcomes: 2–5x performance gains, 50% time-to-market reduction, CI/CD implementation.
   
     Balances innovation with practical business needs, emphasizing team growth and efficient development processes.
 
 education:
   title: Education
   items:
-    - degree: Postgraduate
+    - degree: Postgraduate studies
       theme: Computer Science
       university: Moscow Institute of Physics and Technology (MIPT), Moscow
       time: 2012 - 2016
@@ -89,7 +90,7 @@ experiences:
     - role: Director of Software Development
       time: February 2020 - February 2022
       company: Markov Processes International, Summit, NJ
-      tags: ['Python', 'C++', 'Pure C', 'Delphi', 'React', 'GatsbyJS', 'ML', 'Node.js', 'CI/CD', 'GitLab']
+      tags: ['Python', 'C++', 'C', 'Delphi', 'React', 'GatsbyJS', 'ML', 'Node.js', 'CI/CD', 'GitLab']
       detail: |
         Established transparent processes for team-executive collaboration,
         led end-to-end software development (acting as de-facto CTO),
@@ -99,7 +100,7 @@ experiences:
         - Implemented modern development practices and full-cycle CI/CD
         - Unified tech stack and modernized documentation system for core products
         - Automated QA processes to accelerate release cycles
-        - Led performance optimization project for flagship product
+        - Initiated and led performance optimization project for flagship product
         - Launched full UI/UX redesign to modern standards for legacy products
         - Prepared company’s DWH solution for cloud migration
         - Delivered MVP for financial portfolio analytics product
@@ -139,8 +140,8 @@ experiences:
       achievements: |
         - Released open-source microservices and event-sourcing frameworks for high-load web services
         - Launched product with server, Web/iOS/Android clients and social media plugins (VK, FB)
-        - Project reached 10K MAU before discontinuation
-        - Core concepts of the project adopted and currently used by major Russian IT companies for their products
+        - Built achievement and gamification mechanics years before they became standard practice — today they ship in practically every consumer app, banking included
+        - Project reached 10K MAU and was discontinued two years after launch: gaps in the plan and limited marketing resources
 
     - role: Assistant Professor (Lecturer)
       time: September 2015 - July 2016
@@ -149,7 +150,7 @@ experiences:
         Developed and taught "Programming Languages" course (Pascal/C/Python) using project-based learning.
         Mentored students in cross-platform text RPG development, modern practices: Git, CI/CD, unit testing, code reviews.
       achievements: |
-        100% course completion rate with all students mastering Agile fundamentals
+        All students completed their course project, picking up Agile and teamwork fundamentals
       tags: ['C', 'Pascal', 'Python', 'Git']
 
     - role: Lead Research Developer

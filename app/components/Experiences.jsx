@@ -19,7 +19,7 @@ const Tags = ({ tags }) => (
     </>
 );
 
-export function Experience({ role, company, time, detail, achievements, tags, className }) {
+export function Experience({ role, company, time, detail, achievements, achievementsTitle, tags, className }) {
     return (
         <article className={ `resume-timeline-item position-relative ${className}` }>
             <div className='resume-timeline-item-header mb-2'>
@@ -44,7 +44,7 @@ export function Experience({ role, company, time, detail, achievements, tags, cl
                     !achievements ? null : (
                         <>
                             <h4 className='resume-timeline-item-desc-heading font-weight-bold'>
-                                Achievements:
+                                { achievementsTitle }:
                             </h4>
                             <Markdown>
                                 { achievements }
@@ -58,7 +58,7 @@ export function Experience({ role, company, time, detail, achievements, tags, cl
     );
 }
 
-export default function Experiences({ title, info }) {
+export default function Experiences({ title, achievements_title, info }) {
     return (
         <section className='resume-section experience-section mb-5'>
             <h2 className='resume-section-title text-uppercase font-weight-bold pb-3 mb-3'>
@@ -68,7 +68,8 @@ export default function Experiences({ title, info }) {
                 <div className='resume-timeline position-relative'>
                     {
                         info.map((item, index) => (
-                            <Experience key={ index } className={ index === info.length - 1 ? '' : 'pb-5' } { ...item } />
+                            <Experience key={ index } className={ index === info.length - 1 ? '' : 'pb-5' }
+                                        achievementsTitle={ achievements_title } { ...item } />
                         ))
                     }
                 </div>
