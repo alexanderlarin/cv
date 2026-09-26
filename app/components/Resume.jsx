@@ -7,11 +7,12 @@ import Languages from './Languages';
 import Interests from './Interests.jsx';
 import Awards from './Awards';
 
-export default function Resume({ name, tagline, contacts, links, summary, experiences, education, skills, languages, interests, awards }) {
+export default function Resume({ locale, switcher, name, tagline, contacts, links, summary, experiences, education, skills, languages, interests, awards }) {
     return (
         <article className="resume-wrapper text-center position-relative">
             <div className="resume-wrapper-inner mx-auto text-start bg-white shadow-lg">
-                <Header name={ name } tagline={ tagline } contacts={ contacts } links={ links }/>
+                <Header name={ name } tagline={ tagline } contacts={ contacts } links={ links }
+                        locale={ locale } switcher={ switcher }/>
                 <div className="resume-body p-5">
                     { summary && <Summary { ...summary }/> }
                     <div className="row">
@@ -23,11 +24,15 @@ export default function Resume({ name, tagline, contacts, links, summary, experi
                             { education && <Education { ...education } /> }
                             {/*{ awards && <Awards { ...awards } /> }*/ }
                             { languages && <Languages { ...languages } /> }
-                            { interests && <Interests { ...interests } /> }
+                            {/*{ interests && <Interests { ...interests } /> }*/ }
                         </div>
                     </div>
                 </div>
             </div>
+            {/* Подвал из исходного шаблона восстановлен как место, но пока пуст:
+                содержимого для него нет. Английская версия намеренно не показывает
+                ничего о существовании русской. */}
+            <footer className='footer'/>
         </article>
     );
 }

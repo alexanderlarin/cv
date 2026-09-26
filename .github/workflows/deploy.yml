@@ -62,6 +62,10 @@ jobs:
         run: pnpm run build
         env:
           PAGES_BASE_PATH: ${{ steps.setup_pages.outputs.base_path }}
+          # Публичный идентификатор Google Analytics. Лежит в Variables репозитория,
+          # не в Secrets: он всё равно виден в исходном коде страницы, а маскировка
+          # в логах только мешает. Если переменная не задана, скрипт не подключается.
+          PUBLIC_GA_ID: ${{ vars.PUBLIC_GA_ID }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

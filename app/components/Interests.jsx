@@ -1,5 +1,6 @@
 export default function Interests({ title, items }) {
-    <section className='resume-section interests-section mb-5'>
+    return (
+        <section className='resume-section interests-section mb-5'>
         <h2 className='resume-section-title text-uppercase font-weight-bold pb-3 mb-3'>
             { title }
         </h2>
@@ -12,5 +13,6 @@ export default function Interests({ title, items }) {
                 }
             </ul>
         </div>
-    </section>
+        </section>
+    );
 }

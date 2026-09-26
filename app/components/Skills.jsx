@@ -1,5 +1,3 @@
-import content from "../../data/ru.yml";
-
 function Block({ title, items, tags }) {
     return (
         <div className="resume-skill-item">

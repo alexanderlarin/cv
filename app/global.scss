@@ -101,11 +101,20 @@ a.theme-btn-on-bg, .theme-btn-on-bg {
 
 .resume-header {
   background: $theme-color-primary;
-  color: rgba(256, 256, 256, 0.9);
-  height: 220px;
+  color: rgba(255, 255, 255, 0.9);
+  // min-height, а не height: на промежуточных ширинах колонки переносятся, содержимое
+  // перестаёт помещаться в 220px и вываливается из шапки на белый фон — соцссылки
+  // оказываются белым по белому.
+  min-height: 220px;
 
   .picture {
     width: 220px;
+    // Шапка растягивается под содержимое, а фото должно примыкать к её низу при
+    // любой высоте — иначе под ним остаётся полоса пустого фона. object-fit не даёт
+    // картинке исказиться, когда шапка выше квадрата.
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
 
   .name {
@@ -119,7 +128,7 @@ a.theme-btn-on-bg, .theme-btn-on-bg {
   }
 
   a {
-    color: rgba(256, 256, 256, 0.6);
+    color: rgba(255, 255, 255, 0.6);
 
     &:hover {
       color: white;
@@ -128,6 +137,53 @@ a.theme-btn-on-bg, .theme-btn-on-bg {
   }
 
 
+}
+
+// Подвал из исходного шаблона: тихая строка по центру под карточкой. В этот проект
+// его разметку не перенесли, остался только осиротевший стиль сердечка.
+.footer {
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+}
+
+// Переключатель языков — управляющий элемент, а не строка текста, поэтому у него
+// есть рамка, заливка выбранного и настоящая область нажатия. Глобус не нужен:
+// две подписи рядом уже сообщают, что это выбор языка, а названия написаны на
+// своих языках и объясняют себя сами.
+.resume-lang-switch {
+  display: inline-block;
+
+  .options {
+    display: inline-flex;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    @include border-radius(999px);
+    overflow: hidden;
+  }
+
+  .option {
+    display: block;
+    padding: 0.3rem 0.85rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.4;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .current {
+    background: rgba(255, 255, 255, 0.92);
+    color: $theme-color-primary;
+  }
+
+  a.option {
+    color: rgba(255, 255, 255, 0.8);
+
+    &:hover,
+    &:focus {
+      background: rgba(255, 255, 255, 0.14);
+      color: #fff;
+    }
+  }
 }
 
 .resume-social {
@@ -277,12 +333,6 @@ a.theme-btn-on-bg, .theme-btn-on-bg {
   color: $theme-text-color-primary;
 }
 
-.footer {
-
-  .fa-heart {
-    color: #fb866a;
-  }
-}
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
@@ -291,11 +341,29 @@ a.theme-btn-on-bg, .theme-btn-on-bg {
   }
 
   .resume-header {
-    height: auto;
+    min-height: 0;
+
+    // 2.25rem с разрядкой не помещается в узкий экран — имя уезжает за правый край.
+    .name {
+      font-size: 1.75rem;
+      letter-spacing: 0.08rem;
+    }
+
+    // Два col-auto рядом не помещаются в 390px и обрезаются: складываем их в столбец.
+    .primary-info,
+    .secondary-info {
+      width: 100%;
+    }
   }
-  .resume-header .picture {
-    width: 120px;
-    @include border-radius(4px);
+
+  // p-5 — это 3rem с каждой стороны, то есть 96px из 390. Текст остаётся без ширины.
+  .resume-wrapper-inner .resume-body {
+    padding: 1.5rem !important;
+  }
+  // На узком экране фото занимает целый экран и ничего не сообщает: шапка и так
+  // начинается с имени. Убираем колонку целиком, а не уменьшаем.
+  .resume-picture-holder {
+    display: none;
   }
 }
 
@@ -303,18 +371,63 @@ a.theme-btn-on-bg, .theme-btn-on-bg {
 @media print {
   @page {
     size: A4 portrait;
-    margin: 0;
+    margin: 14mm 12mm;
   }
 
-  .col-lg-9 {
-    max-width: 75%;
-  }
+  // На A4 для сайдбара нет ширины: правая колонка сжимается до ~20 символов,
+  // а порядок чтения перемешивается, из-за чего парсеры резюме читают кашу.
+  // На печати — одна колонка.
+  .col-lg-9,
   .col-lg-3 {
-    max-width: 25%;
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 
-  .row {
+  // Печать фоновой графики по умолчанию выключена, поэтому светлый текст на
+  // тёмной подложке рискует уйти в белое по белому. Не воюем за фоны — обходимся
+  // без них.
+  .resume-header {
+    background: none;
+    color: #000;
+    height: auto;
+
+    .name,
+    .title,
+    a,
+    a.text-link {
+      color: #000;
+    }
+  }
+
+  // Имитация листа на самом листе бессмысленна.
+  .resume-wrapper {
+    padding: 0;
+  }
+
+  .resume-wrapper-inner {
+    max-width: none;
+    box-shadow: none !important;
+  }
+
+  .resume-body {
     padding: 0 !important;
-    margin: 0 !important;
+  }
+
+  // Не разрывать запись о работе между страницами.
+  .resume-timeline-item {
+    break-inside: avoid;
+  }
+
+  // Печатается документ, то есть карточка. Всё, что лежит снаружи неё, — это сайт:
+  // выбор языка, а со временем и кнопка скачивания. На бумаге выбирать не из чего.
+  // Правило структурное, поэтому новые элементы не придётся вычищать поимённо.
+  .resume-wrapper > :not(.resume-wrapper-inner) {
+    display: none;
+  }
+
+  // Переключатель живёт внутри карточки, поэтому структурное правило выше его не
+  // ловит. На бумаге выбирать язык не из чего.
+  .resume-lang-switch {
+    display: none;
   }
 }
