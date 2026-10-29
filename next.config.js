@@ -1,12 +1,12 @@
 import withYaml from 'next-plugin-yaml';
+import { PHASE_DEVELOPMENT_SERVER } from 'next/constants.js';
 
-const nextConfig = withYaml({
+const nextConfig = (phase) => withYaml({
   output: 'export',
   basePath: process.env.PAGES_BASE_PATH,
-  // next dev и next build пишут в одну и ту же .next: сборка, запущенная рядом
-  // с работающим dev-сервером, затирает его чанки, и страница открывается без
-  // стилей. Проверочные сборки запускать с NEXT_DIST_DIR=.next-verify.
-  distDir: process.env.NEXT_DIST_DIR || '.next',
+  // При output: 'export' Next использует .next для сборки независимо от distDir.
+  // Отдельный каталог разработки предотвращает перезапись чанков dev-сервера.
+  distDir: phase === PHASE_DEVELOPMENT_SERVER ? '.next-dev' : '.next',
   // Статический экспорт не может использовать серверный оптимизатор изображений,
   // поэтому next/image работает в режиме без оптимизации. Всё остальное —
   // размеры из статического импорта, basePath, priority — продолжает работать.
