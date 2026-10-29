@@ -2,7 +2,7 @@ metadata:
   title: 'CV: Alexander Larin'
   description: ''
 name: Alexander Larin
-tagline: Tech Lead, CTO
+tagline: Engineer & Technical Lead
 contacts:
   email: ekzebox@gmail.com
   phone: '+79156997437'
@@ -18,7 +18,7 @@ languages:
     - idiom: Russian
       level: Native
     - idiom: English
-      level: Professional, B2
+      level: B2
 
 interests:
   title: Interests
@@ -57,14 +57,17 @@ interests:
 summary:
   title: Summary
   description: |
-    Technical lead and solutions architect with 10+ years in software development and 5 years managing complex IT projects.
-    Works across the full development cycle — from research and architecture through release and support — on Desktop, Mobile, Web and IoT.
-    Domains range from computer vision and ML to high-load services.
-    Combines a technical and research background with hands-on leadership (Agile, SCRUM, team building).
+    Engineer and technical lead. Building software since 2008, with five years leading development and teams.
 
-    Delivered 10+ successful projects with measurable outcomes: 2–5x performance gains, 50% time-to-market reduction, CI/CD implementation.
-  
-    Balances innovation with practical business needs, emphasizing team growth and efficient development processes.
+    What I do best is make things work that don't work yet: research algorithms, prototypes,
+    old systems people are afraid to touch. I'm not scared of someone else's legacy and I don't propose rewriting it all.
+    I figure out how the system works and bring a plan to improve it without breaking it.
+
+    I've worked in computer vision and machine learning, published in scientific journals,
+    led development, and built products from scratch — from servers and mobile apps to hardware.
+
+    I take responsibility for delivery across the full lifecycle: requirements analysis, technical decisions,
+    organizing the work, implementation, deployment and ongoing development.
 
 education:
   title: Education
@@ -87,40 +90,96 @@ experiences:
   achievements_title: Achievements
   tags_title: Technologies
   info:
+    - role: Research Engineer
+      time: May 2026 - Present
+      company: Sovtest ATE / MSUT STANKIN
+      location: Moscow
+      tags: ['C++', 'Python', 'ZeroMQ', 'MessagePack', 'OpenCV', 'PaddleOCR', 'ONNX', 'CMake', 'GitLab', 'GitLab CI/CD']
+      detail: |
+        Shortened the path from the research group's ML work to automated test and manufacturing equipment for microelectronics.
+        Designed and built a platform through which models ship and update as plugins in nearly their research form — no C++ rewrite, no changes to the equipment software, no performance loss.
+        Currently deploying GitLab, setting up a build farm and building CI/CD pipelines for machine software projects.
+      achievements: |
+        - Built the platform: C++ task manager, zero-copy image transfer over shared memory, Python and C++ SDKs, diagnostics and logging
+        - Integrated wafer marking recognition into a wafer loader undergoing acceptance
+        - Debugged wafer and probe-needle detection on research data; awaiting integration
+        - Conducted a comparative study of image preprocessing for industrial marking recognition
+
+    - role: Lead Engineer, Consultant
+      time: June 2024 - Present
+      company: Hardware startup, stabilized aerial imaging
+      location: Tula / Moscow
+      tags: ['C++', 'Python', 'STM32', 'Raspberry Pi', 'IMU', 'Kalman filter', 'RS-485', 'I2C']
+      detail: |
+        Full technical implementation of a three-axis gyro-stabilized platform for aerial photography and surveying — from an idea and a set of hardware to a working prototype.
+        The gimbal compensates for carrier motion, allowing long exposures without blur.
+      achievements: |
+        - Designed the system architecture: sensors, motor control, compute module, monitoring
+        - Developed STM32 firmware in C++ and Raspberry Pi control software
+        - Developed a network protocol and a terminal for debugging and monitoring
+        - Built a working prototype
+
+    - role: Lead Developer, Consultant
+      time: August 2022 - February 2023
+      company: Markov Processes International
+      location: Summit, NJ
+      tags: ['C++', 'C', 'Assembly', 'Python', 'pybind11']
+      detail: |
+        Exposed the computational core (C/C++ with assembly code) through Python bindings for new backend services — without rewriting the legacy code.
+      achievements: |
+        - Covered the legacy core with tests on edge cases and logic branches before refactoring
+        - Completed the port with all tests passing; performance improved
+        - Found and fixed serious defects the client was unaware of
+
+    - role: Research Fellow
+      time: November 2021 - Present
+      company: Tula State University, Laboratory of Cognitive Technologies and Simulation Systems
+      location: Tula
+      tags: ['Python', 'CI/CD', 'Git']
+      detail: |
+        Engineering consulting for the lab's research projects.
+        Mentoring young researchers: CI/CD, maintainable and reusable code, bringing projects to a working state.
+      achievements: |
+        - Co-authored a review of detection methods for film resistive elements in laser trimming (RENSIT, 2024)
+
     - role: Director of Software Development
       time: February 2020 - February 2022
-      company: Markov Processes International, Summit, NJ
-      tags: ['Python', 'C++', 'C', 'Delphi', 'React', 'GatsbyJS', 'ML', 'Node.js', 'CI/CD', 'GitLab']
+      company: Markov Processes International
+      location: Summit, NJ
+      tags: ['Python', 'C++', 'C', 'Delphi', 'React', 'GatsbyJS', 'ML', 'Node.js', 'GitLab CI/CD', 'Linode', 'Docker', 'Ansible']
       detail: |
         Established transparent processes for team-executive collaboration,
         led end-to-end software development (acting as de-facto CTO),
         optimized and secured additional resources for R&D and testing,
         orchestrated legacy system modernization initiatives.
       achievements: |
-        - Implemented modern development practices and full-cycle CI/CD
+        - Implemented GitLab CI/CD to automate software builds, testing and releases
+        - Automated management of Linode cloud machines for builds and regression testing
         - Unified tech stack and modernized documentation system for core products
         - Automated QA processes to accelerate release cycles
         - Initiated and led performance optimization project for flagship product
         - Launched full UI/UX redesign to modern standards for legacy products
-        - Prepared company’s DWH solution for cloud migration
+        - Prepared the team and infrastructure for migration of the company’s DWH solution to the cloud
         - Delivered MVP for financial portfolio analytics product
 
     - role: Lead Developer, Consultant
       time: November 2021 - May 2022
-      company: Chili Solusi, Jakarta, Indonesia
-      tags: ['Python', 'FastAPI', 'PyTorch', 'TensorFlow', 'Postgres']
+      company: Chili Solusi
+      location: Jakarta, Indonesia
+      tags: ['Python', 'FastAPI', 'PyTorch', 'TensorFlow', 'PostgreSQL', 'Docker', 'Kubernetes', 'Helm']
       detail: |
-        Developed and deployed ML-powered Anti-Fraud system and document verification OCR solution.
-        Integrated solutions into product's microservice architecture with real-time performance optimization.
+        Developed and deployed an ML-powered Anti-Fraud system and an OCR solution for document verification.
+        Integrated solutions into the product's microservice architecture with real-time performance optimization.
       achievements: |
-        - Built high-accuracy Anti-Fraud system (>96% detection rate) that enabled market entry in Indonesia's microfinance sector with unique offering
-        - Created on-premise OCR system, eliminating dependency on paid third-party ML services and reducing per-request cost by 50%
-        - Ensured system stability under heavy load (~99% uptime at 500 RPS)
+        - Built an Anti-Fraud system for the Indonesian microfinance market
+        - Created an on-premises OCR system, eliminating dependency on paid third-party ML services
+        - Prepared Helm configurations for deploying the document processing service to Kubernetes
 
     - role: Lead Researcher, Consultant
       time: January 2019 - September 2019
-      company: Huawei, R&D, Moscow
-      tags: ['C++', 'Python', 'OpenCV', 'TensorFlow', 'PyTorch', 'Pandas', 'SciPy']
+      company: Huawei, R&D
+      location: Moscow
+      tags: ['C++', 'Python', 'OpenCV', 'TensorFlow', 'PyTorch', 'pandas', 'SciPy']
       detail: |
         Led research project improving RGBD sensor data quality using Computer Vision methods.
         Developed and optimized depth map super-resolution algorithms, including state-of-the-art analysis.
@@ -132,7 +191,8 @@ experiences:
 
     - role: Lead FullStack Developer, Architect
       time: August 2015 - February 2018
-      company: Developer Express, Tula
+      company: Developer Express
+      location: Tula
       tags: ['Node.js', 'React', 'React Native', 'Microservices', 'Event Sourcing', 'MongoDB']
       detail: |
         Designed product concept, roadmap and go-to-market strategy for gamification platform (B2C/B2B).
@@ -143,9 +203,10 @@ experiences:
         - Built achievement and gamification mechanics years before they became standard practice — today they ship in practically every consumer app, banking included
         - Project reached 10K MAU and was discontinued two years after launch: gaps in the plan and limited marketing resources
 
-    - role: Assistant Professor (Lecturer)
+    - role: Lecturer
       time: September 2015 - July 2016
-      company: Tula State University, Tula
+      company: Tula State University
+      location: Tula
       detail: |
         Developed and taught "Programming Languages" course (Pascal/C/Python) using project-based learning.
         Mentored students in cross-platform text RPG development, modern practices: Git, CI/CD, unit testing, code reviews.
@@ -155,26 +216,30 @@ experiences:
 
     - role: Lead Research Developer
       time: March 2013 - November 2015
-      company: GlobeDrobe, Moscow
+      company: GlobeDrobe
+      location: Moscow
       tags: ['C++', 'Python', 'PCL', 'OpenCV', 'CGAL', 'Kinect SDK', 'SLAM']
       detail: |
-        Developed 3D human body scanning system for virtual fitting room using Kinect.
+        Developed a 3D human body scanning system for a virtual fitting room using Kinect.
         Researched and implemented computer vision algorithms and surface reconstruction system.
         Contributed to open-source 3D processing libraries.
       achievements: |
         - Built real-time virtual fitting room prototype
+        - Revived the Pinocchio library for automatic rigging and animation of 3D characters and developed [pynocchio](https://github.com/alexanderlarin/pynocchio) Python bindings
         - Created unique 3D scanning system: 2-minute scan/processing time, 50K+ polygon models with textures, <5mm margin of error
 
     - role: Senior Developer
       time: August 2012 - February 2013
-      company: Refactor IKS, Moscow
-      tags: ['ASP.NET', 'MVC', 'C#', 'SQL']
+      company: Refactor IKS
+      location: Moscow
+      tags: ['ASP.NET MVC', 'C#', 'SQL']
       detail: |
         Developed, implemented and maintained enterprise .NET MVC systems.
 
     - role: Middle Developer
       time: August 2009 - August 2012
-      company: Developer Express, Tula
+      company: Developer Express
+      location: Tula
       tags: ['C#', 'ASP.NET', 'WinForms', 'Silverlight', 'WinRT', 'WPF', 'Unit Testing', 'QA', 'TDD']
       detail: |
         Developed and refactored data visualization components (DXperience product line).
@@ -182,7 +247,19 @@ experiences:
 
     - role: Junior Developer
       time: September 2008 - July 2009
-      company: Smartech, Tula
+      company: Smartech
+      location: Tula
       tags: ['C', 'C++', 'Qt']
       detail: |
         Developed cross-platform applications using Qt framework.
+
+practice:
+  enabled: false
+  title: Hands-on Engineering
+  info:
+    - role: 3D Printing and Equipment Modification
+      detail: |
+        Rebuild and modify FDM printers, including mechanical and electronics upgrades, add-on modules, Klipper configuration, custom macros and scripts.
+        Reverse-engineer parts from physical measurements and 3D scan data; create and adapt CAD models for 3D printing with engineering plastics.
+        Produce resin miniatures to order and fabricate and hand-finish props.
+      tags: ['CAD', 'FDM', 'SLA', 'Klipper', 'Reverse Engineering']

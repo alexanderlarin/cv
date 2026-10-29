@@ -7,7 +7,7 @@ import Languages from './Languages';
 import Interests from './Interests.jsx';
 import Awards from './Awards';
 
-export default function Resume({ locale, switcher, name, tagline, contacts, links, summary, experiences, education, skills, languages, interests, awards }) {
+export default function Resume({ locale, switcher, name, tagline, contacts, links, summary, experiences, practice, education, skills, languages, interests, awards }) {
     return (
         <article className="resume-wrapper text-center position-relative">
             <div className="resume-wrapper-inner mx-auto text-start bg-white shadow-lg">
@@ -18,6 +18,7 @@ export default function Resume({ locale, switcher, name, tagline, contacts, link
                     <div className="row">
                         <div className="col-lg-9">
                             { experiences && <Experiences { ...experiences } /> }
+                            { practice && practice.enabled !== false && <Experiences { ...practice } /> }
                         </div>
                         <div className="col-lg-3">
                             { skills && <Skills { ...skills } /> }

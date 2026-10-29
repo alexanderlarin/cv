@@ -257,10 +257,34 @@ a.theme-btn-on-bg, .theme-btn-on-bg {
   height: 0.6rem;
 }
 
+.resume-position-header {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  column-gap: 1.5rem;
+  align-items: baseline;
+
+  > * {
+    min-width: 0;
+  }
+
+  > :only-child {
+    grid-column: 1 / -1;
+  }
+
+  @media (max-width: 767.98px) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 .resume-company-name {
   color: $theme-text-color-secondary;
   font-size: 0.875rem;
   font-weight: 500;
+  text-align: right;
+
+  @media (max-width: 767.98px) {
+    text-align: left;
+  }
 }
 
 .resume-position-time {
@@ -342,7 +366,6 @@ a.theme-btn-on-bg, .theme-btn-on-bg {
 
   .resume-header {
     min-height: 0;
-
     // 2.25rem с разрядкой не помещается в узкий экран — имя уезжает за правый край.
     .name {
       font-size: 1.75rem;
@@ -374,6 +397,42 @@ a.theme-btn-on-bg, .theme-btn-on-bg {
     margin: 14mm 12mm;
   }
 
+  html {
+    font-size: 10pt;
+  }
+
+  body {
+    line-height: 1.35;
+    background: white;
+    font-family: Arial, sans-serif;
+  }
+
+  .resume-body > .row {
+    display: block;
+  }
+
+  .resume-section {
+    margin-bottom: 1.5rem !important;
+  }
+
+  .resume-section-title {
+    break-after: avoid;
+  }
+
+  .education-section,
+  .language-section,
+  .resume-body > .row > .col-lg-3 {
+    break-inside: avoid;
+  }
+
+  .resume-position-header {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  }
+
+  .resume-company-name {
+    text-align: right;
+  }
+
   // На A4 для сайдбара нет ширины: правая колонка сжимается до ~20 символов,
   // а порядок чтения перемешивается, из-за чего парсеры резюме читают кашу.
   // На печати — одна колонка.
@@ -390,12 +449,44 @@ a.theme-btn-on-bg, .theme-btn-on-bg {
     background: none;
     color: #000;
     height: auto;
+    min-height: 0;
+    padding: 0 !important;
+    margin-bottom: 1.5rem;
+
+    .resume-picture-holder {
+      display: none;
+    }
+
+    .col > .row {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+      padding: 0 !important;
+      column-gap: 1rem;
+    }
+
+    .primary-info,
+    .secondary-info {
+      width: auto;
+      min-width: 0;
+    }
+
+    .name {
+      font-size: 1.75rem;
+    }
+
+    .title {
+      font-size: 1.1rem;
+    }
+
+    ul {
+      margin-bottom: 0;
+    }
 
     .name,
     .title,
     a,
     a.text-link {
-      color: #000;
+      color: #000 !important;
     }
   }
 
@@ -416,6 +507,7 @@ a.theme-btn-on-bg, .theme-btn-on-bg {
   // Не разрывать запись о работе между страницами.
   .resume-timeline-item {
     break-inside: avoid;
+    padding-bottom: 1.25rem !important;
   }
 
   // Печатается документ, то есть карточка. Всё, что лежит снаружи неё, — это сайт:

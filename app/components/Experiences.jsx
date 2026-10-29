@@ -19,20 +19,21 @@ const Tags = ({ tags }) => (
     </>
 );
 
-export function Experience({ role, company, time, detail, achievements, achievementsTitle, tags, className }) {
+export function Experience({ role, company, location, time, detail, achievements, achievementsTitle, tags, className }) {
     return (
         <article className={ `resume-timeline-item position-relative ${className}` }>
             <div className='resume-timeline-item-header mb-2'>
-                <div className='d-flex flex-column flex-md-row'>
-                    <h3 className='resume-position-title font-weight-bold mb-1'>
-                        { role }
-                    </h3>
-                    <div className='resume-company-name ms-auto'>
-                        { company }
+                <div className='resume-position-header'>
+                    <div>
+                        <h3 className='resume-position-title font-weight-bold mb-1'>
+                            { role }
+                        </h3>
+                        { time && <div className='resume-position-time'>{ time }</div> }
                     </div>
-                </div>
-                <div className='resume-position-time'>
-                    { time }
+                    { company && <div className='resume-company-name'>
+                        { company }
+                        { location && <div className='resume-company-location'>{ location }</div> }
+                    </div> }
                 </div>
             </div>
 
